@@ -6,7 +6,7 @@ This is an offline, read-only CLI. A matched entry means the file or npm script 
 
 ## Install from this source tree
 
-Python 3.11+ and a POSIX system supporting directory-relative no-follow opens are required. Local verification was performed on macOS with Python 3.14.7. Other Python versions and Linux are not yet independently verified; Windows has no supported safe-open implementation.
+Python 3.11+ and a POSIX system supporting directory-relative no-follow opens are required. Local verification was performed on macOS with Python 3.14.7. The source-release CI also runs the test suite on Ubuntu and macOS with Python 3.11 and 3.14; see [the workflow](https://github.com/widechaos/context-refcheck/actions/workflows/check.yml). Windows has no supported safe-open implementation.
 
 ```sh
 git clone https://github.com/widechaos/context-refcheck.git
