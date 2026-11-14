@@ -1,4 +1,5 @@
 [
+  ".github/workflows/check.yml",
   ".gitignore",
   "LICENSE",
   "MANIFEST.in",

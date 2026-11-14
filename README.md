@@ -2,19 +2,21 @@
 
 Find stale local paths and command entry points in `CLAUDE.md`, `AGENTS.md`, and `HANDOFF.md`, without executing anything in them. Optionally compare declared evidence file hashes.
 
-This is an offline, read-only CLI. A matched entry means the file or npm script key exists. It does **not** mean a command ran, a test passed, or an instruction is correct. Version 0.1.0 is a local release candidate pending independent review; it has not been published to a package registry.
+This is an offline, read-only CLI. A matched entry means the file or npm script key exists. It does **not** mean a command ran, a test passed, or an instruction is correct. Version 0.1.0 is a source release; it has not been published to a package registry.
 
 ## Install from this source tree
 
 Python 3.11+ and a POSIX system supporting directory-relative no-follow opens are required. Local verification was performed on macOS with Python 3.14.7. Other Python versions and Linux are not yet independently verified; Windows has no supported safe-open implementation.
 
 ```sh
+git clone https://github.com/widechaos/context-refcheck.git
+cd context-refcheck
 python3 -m venv .venv
 .venv/bin/python -m pip install .
 .venv/bin/context-refcheck --version
 ```
 
-Installation may download the setuptools build tool. Runtime uses only the Python standard library, needs no API keys, and makes no network requests. Package and executable names are provisional pending publication review.
+Installation may download the setuptools build tool. Runtime uses only the Python standard library, needs no API keys, and makes no network requests. The source package installs the `context-refcheck` executable.
 
 ## Try three synthetic projects
 
