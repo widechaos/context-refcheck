@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "context-refcheck"
+version = "0.1.0"
+description = "Offline static checks for paths, command entry points, and evidence in agent instructions"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Renchao Wu"}]
+dependencies = []
+
+[project.scripts]
+context-refcheck = "context_refcheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

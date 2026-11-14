@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {
+      "id": "report-version",
+      "kind": "evidence",
+      "document": "HANDOFF.md",
+      "quote": "Evidence: `reports/check.txt`.",
+      "target": "reports/check.txt",
+      "sha256": "90d0f41fe4751a07cfb5ec413fcafd8222670ba651866ab823d318b33fafc89b"
+    }
+  ]
+}

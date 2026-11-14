@@ -1,0 +1,7 @@
+include .gitignore README.md LICENSE pyproject.toml MANIFEST.in
+recursive-include docs *.md *.json
+recursive-include tests *.py
+recursive-include examples *.md *.py *.js *.json *.txt
+recursive-exclude * __pycache__ *pyc
+exclude CLAUDE.md
+prune evidence
